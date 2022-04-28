@@ -5,17 +5,12 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
 export default function CustomCard(props) {
-const { component: Component, setState, state} = props
- let handleChange = () => {
-  // setState(!state)
-  // console.log(state)
-  console.log('changed')
- }
+const { component: Component} = props
 
   return (
     <Card className="card">
       <CardContent>
-        <Typography variant="h6" component="div">
+        <Typography variant="h6" component="div" class="cardTitle">
           <b>{props.title}</b>
         </Typography>
         <Typography variant="body2">
@@ -23,7 +18,7 @@ const { component: Component, setState, state} = props
         </Typography>
       </CardContent>
       <CardActions>
-      <Component onChange={handleChange} />
+      <Component />
       </CardActions>
     </Card>
   );
