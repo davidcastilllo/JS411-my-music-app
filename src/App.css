@@ -37,5 +37,19 @@
  width: 100%;
 }
 
+#signup {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 50px;
+}
+
+.btn {
+ width: 280px;
+}
 
 
+
+.password {
+ margin-bottom: 18px;
+}

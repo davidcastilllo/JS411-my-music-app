@@ -4,10 +4,10 @@ import DashBoard from './comps/DashBoard';
 import SignUp from './comps/SignUp';
 
 function App() {
- let [isLoggedIn, setIsLogged] = useState(true)
+ let [isLoggedIn, setIsLogged] = useState(false)
   return (
     <div className="App">
-       {isLoggedIn ? <DashBoard /> : <SignUp />}
+       {isLoggedIn ? <DashBoard /> : <SignUp setLogin={setIsLogged}/>}
     </div>
   );
 }
